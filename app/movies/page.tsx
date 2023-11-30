@@ -1,13 +1,10 @@
 import Movies from "@/components/Movies";
 import getMovies from "@/lib/getMovies";
-import {
-  dehydrate,
-  HydrationBoundary,
-  QueryClient,
-} from "@tanstack/react-query";
+import getQueryClient from "@/lib/getQueryClient";
+import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 
 export default async function Page() {
-  const queryClient = new QueryClient();
+  const queryClient = getQueryClient();
   await queryClient.prefetchQuery({
     queryKey: ["movies"],
     queryFn: () => getMovies(),
