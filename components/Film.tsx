@@ -39,7 +39,7 @@ export default function Film({ id }: Props) {
       }
     );
     return (
-      <div className="flex min-h-[80dvh] w-full flex-col items-center justify-start space-y-8  px-8 text-lg sm:w-fit sm:text-xl">
+      <div className="flex min-h-[80svh] w-full flex-col items-center justify-start space-y-8  px-8 text-lg sm:w-fit sm:text-xl">
         <h1 className="text-center text-4xl font-semibold sm:text-5xl">
           {film.title}
         </h1>

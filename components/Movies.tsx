@@ -7,7 +7,6 @@ import { useState } from "react";
 import debounce from "lodash.debounce";
 import MovieLink from "./MovieLink";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
-import { useTheme } from "next-themes";
 
 export default function Movies() {
   const [filterQuery, setFilterQuery] = useState("");

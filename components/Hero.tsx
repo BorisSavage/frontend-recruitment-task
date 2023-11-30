@@ -26,7 +26,7 @@ export default function Hero() {
   return (
     <div
       ref={ref}
-      className="absolute left-0 right-0 top-0 flex h-[80dvh] flex-col items-center justify-start overflow-hidden object-top text-center sm:space-y-8"
+      className="absolute left-0 right-0 top-0 flex min-h-[80svh] flex-col items-center justify-start overflow-hidden object-top text-center sm:space-y-8"
     >
       <motion.div className="h-full w-full" style={{ y, opacity, filter }}>
         <Image
@@ -42,7 +42,7 @@ export default function Hero() {
         <span className="select-none text-slate-900 blur-[2px]">{name}</span>
         <h1
           className={cn(
-            "bg-300% animate-gradient absolute left-0 top-0 bg-gradient-to-r from-[#d4ea62] via-[#ed711e] to-[#e9295c] bg-clip-text text-transparent",
+            "absolute left-0 top-0 animate-gradient bg-gradient-to-r from-[#d4ea62] via-[#ed711e] to-[#e9295c] bg-300% bg-clip-text text-transparent",
             "dark:from-teal-400 dark:via-amber-400 dark:to-violet-400"
           )}
         >

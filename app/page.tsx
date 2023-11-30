@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
-    <div className="mt-[calc(80dvh-3rem)] flex flex-col items-center justify-center pb-24">
+    <div className="mt-[calc(80svh-3rem)] flex flex-col items-center justify-center pb-24">
       <Hero />
       <main className="relative">
         <section>
