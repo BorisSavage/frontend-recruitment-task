@@ -4,6 +4,7 @@ import getMovies from "@/lib/getMovies";
 import { formatDate } from "@/lib/utils";
 import { useQuery } from "@tanstack/react-query";
 import OpeningCrawl from "./OpeningCrawl";
+import { Spinner } from "@nextui-org/react";
 
 type Props = { id: number };
 export default function Film({ id }: Props) {
@@ -12,7 +13,7 @@ export default function Film({ id }: Props) {
     error,
     isLoading,
   } = useQuery<Film, Error>({
-    queryKey: ["film"],
+    queryKey: [`film-${id}`],
     queryFn: () => getMovies(id),
   });
 
@@ -26,7 +27,7 @@ export default function Film({ id }: Props) {
   if (isLoading)
     return (
       <div>
-        <h2>L O A D I N G...</h2>
+        <Spinner size="lg" color="success" />
       </div>
     );
 

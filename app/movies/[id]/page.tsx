@@ -10,7 +10,7 @@ export default async function Page({
 }) {
   const queryClient = getQueryClient();
   await queryClient.prefetchQuery({
-    queryKey: ["film"],
+    queryKey: [`film-${id}`],
     queryFn: () => getMovies(id),
   });
   return (

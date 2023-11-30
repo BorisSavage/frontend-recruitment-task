@@ -28,7 +28,7 @@ export default function RootLayout({
       lang="en"
       className={`${montserrat.variable} font-sans`}
     >
-      <body className="relative bg-slate-100 font-montserrat text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+      <body className="relative min-h-[100svh] bg-slate-100 font-montserrat text-slate-900 dark:bg-slate-900 dark:text-slate-100">
         <Provider attribute="class" defaultTheme="light">
           <div className="flex justify-center">
             <div className="max-w-[1000px] grow">
