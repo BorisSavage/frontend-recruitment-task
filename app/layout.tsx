@@ -1,13 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import Provider from "@/lib/Providers";
 import BreadcrumbNav from "@/components/BreadcrumbNav";
 import { Montserrat } from "next/font/google";
 import BackgroundDots from "@/components/BackgroundDots";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Recruitment Task",
