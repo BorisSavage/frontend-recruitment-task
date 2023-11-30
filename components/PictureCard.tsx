@@ -23,7 +23,7 @@ export default function PictureCard({ image, alt }: Props) {
           fill
           quality={100}
           placeholder="blur"
-          sizes="(max-width: 450px) 450px, 330px"
+          sizes="(min-width: 450px) 330px, 100svw"
           src={image}
           alt={alt}
         />

@@ -26,7 +26,7 @@ export default function Hero() {
   return (
     <div
       ref={ref}
-      className="absolute left-0 right-0 top-0 flex min-h-[80svh] flex-col items-center justify-start overflow-hidden object-top text-center sm:space-y-8"
+      className="absolute left-0 right-0 top-0 flex h-[80svh] flex-col items-center justify-start overflow-hidden object-top text-center sm:space-y-8"
     >
       <motion.div className="h-full w-full" style={{ y, opacity, filter }}>
         <Image
