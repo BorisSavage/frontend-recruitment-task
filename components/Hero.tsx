@@ -25,6 +25,10 @@ export default function Hero() {
   );
   return (
     <div
+      style={{
+        WebkitMask: "linear-gradient(to top, transparent, red 1%)",
+        mask: "linear-gradient(to top, transparent, red 1%)",
+      }}
       ref={ref}
       className="absolute left-0 right-0 top-0 flex h-[80svh] flex-col items-center justify-start overflow-hidden object-top text-center sm:space-y-8"
     >

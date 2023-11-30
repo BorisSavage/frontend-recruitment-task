@@ -5,9 +5,11 @@ import { formatDate } from "@/lib/utils";
 import { useQuery } from "@tanstack/react-query";
 import OpeningCrawl from "./OpeningCrawl";
 import { Spinner } from "@nextui-org/react";
+import { useTheme } from "next-themes";
 
 type Props = { id: number };
 export default function Film({ id }: Props) {
+  const { theme } = useTheme();
   const {
     data: film,
     error,
@@ -27,7 +29,11 @@ export default function Film({ id }: Props) {
   if (isLoading)
     return (
       <div>
-        <Spinner size="lg" color="success" />
+        <Spinner
+          size="lg"
+          color={theme === "dark" ? "success" : "primary"}
+          label="Loading..."
+        />
       </div>
     );
 
